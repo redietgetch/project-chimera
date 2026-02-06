@@ -1,19 +1,11 @@
-# Dockerfile for Project Chimera
+# Project Chimera Dockerfile
 FROM python:3.11-slim
 
-# Set work directory
 WORKDIR /app
 
-# Install system dependencies
-RUN apt-get update && apt-get install -y \
-    build-essential \
-    && rm -rf /var/lib/apt/lists/*
+COPY pyproject.toml ./
+RUN pip install --upgrade pip && pip install poetry && poetry install --no-root
 
-# Copy project files
-COPY . /app
+COPY . .
 
-# Install Python dependencies (if using pyproject.toml or requirements.txt)
-RUN pip install --upgrade pip
-RUN if [ -f pyproject.toml ]; then pip install .; elif [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-
-CMD ["bash"]
+CMD ["pytest", "tests/"]
