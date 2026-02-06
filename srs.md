@@ -45,7 +45,7 @@ Deliverable: A detailed architectural document (Diagrams are encouraged, use Mer
 Task 1.3: The "Golden" Environment Setup (2 Hours)
 Action: Initialize your Git Repository.
 Requirement: Connect Tenx MCP Sense to your IDE.
-Requirement: Configure a professional Python environment (recommend using uv).
+Requirement: Configure a professional Python environment (using Poetry).
 Deliverable: A confirmed connection log in MCP Sense and a pyproject.toml (or equivalent) in your repo.
 Task 2: The Architect (Specification & Context Engineering)
 Focus: Translating "Business Hopes" into "Executable Intent" and equipping the Agents.
