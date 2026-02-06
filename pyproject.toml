@@ -1,3 +1,4 @@
+# Minimal pyproject.toml for Project Chimera
 [tool.poetry]
 name = "project-chimera"
 version = "0.1.0"
