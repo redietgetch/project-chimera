@@ -1,5 +1,5 @@
 import pytest
-from skills.fetch_trends import fetch_trends
+from skills.trend_fetcher import fetch_trends
 from skills.generate_content import generate_content
 from skills.publish_video import publish_video
 
