@@ -1,0 +1,14 @@
+# CodeRabbit AI Review Policy for Project Chimera
+spec_alignment:
+  enabled: true
+  description: >
+    Reviewer must check that all code changes are traceable to a specification in the specs/ directory. Reject PRs that do not reference a spec.
+security:
+  enabled: true
+  description: >
+    Reviewer must check for common security vulnerabilities and unsafe code patterns.
+  checks:
+    - input validation
+    - dependency safety
+    - secrets detection
+    - code injection risks

@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: Install Docker
+        uses: docker-practice/actions-setup-docker@v1
+      - name: Build Docker image
+        run: docker build -t chimera-test .
+      - name: Run tests in Docker
+        run: docker run --rm chimera-test pytest tests/
