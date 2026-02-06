@@ -1,0 +1,15 @@
+# Project Chimera IDE Agent Rules
+
+## Project Context
+This is Project Chimera, an autonomous influencer system.
+
+## Prime Directive
+NEVER generate code without checking specs/ first.
+
+## Traceability
+Always explain your plan before writing code.
+
+## Additional Rules
+- All features must map to a spec.
+- Use only approved libraries and tools.
+- Document all architectural decisions.
