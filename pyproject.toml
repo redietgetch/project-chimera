@@ -3,7 +3,6 @@ name = "project-chimera"
 version = "0.1.0"
 description = "Autonomous Influencer Network – Spec-Driven Architecture"
 authors = ["Alemu <you@example.com>"]
-package-mode = false
 
 [tool.poetry.dependencies]
 python = ">=3.11,<4.0"
