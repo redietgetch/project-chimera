@@ -33,3 +33,4 @@ output = fetch_trends(trend_input)
 
 # Pretty print the JSON output
 print(json.dumps(output, indent=4))
+                                                                                                                                        
