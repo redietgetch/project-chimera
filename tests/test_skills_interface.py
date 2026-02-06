@@ -5,7 +5,7 @@ def test_skills_interface():
     # Example: skill_generate_caption should accept trend, media_type, platform
     # Simulate a call to the (not yet implemented) skill
     try:
-        from skills.skill_generate_caption import generate_caption
+        from skills.skill_generate_content import generate_caption
         result = generate_caption(trend="AI Art", media_type="video", platform="Instagram")
         assert isinstance(result, dict) and "caption" in result
     except ImportError:
